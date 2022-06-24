@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="description here" />
+      <meta name="keywords" content="keywords 65" />
+      <meta anme="author" content="AHMED MENISY" />
+      <title>Weather</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"rel="stylesheet"/>
+      <link rel="stylesheet" href="./css/all.min.css" />
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg">
+            <div class="container px-5">
+               <a class="navbar-brand hstack" href="#">
+                  <img class="img-fluid"src="./images/logo.png" alt="logo photo"/>
+                  <h1 class="fs-6 mb-0 ms-3"> Weather<br />
+                     <span>tagline goes here</span>
+                  </h1>
+               </a>
+               <button class="navbar-toggler"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation" >
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link active"aria-current="page"href="./index.html" >Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">News</a >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" >Live cameras</a >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" >Photos</a >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a >
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section class="forecast py-5">
+            <div class="container px-5">
+               <div class="forecast-search position-relative mt-3 mb-5">
+                  <input id="searchFor" class="w-100" type="search" placeholder="Find your location"/>
+                  <button id="btnSearch"class="text-white btn__primary position-absolute"type="button" > Find</button>
+               </div>
+               <div class="forecast-container row row-cols-1 row-cols-md-2 row-cols-lg-3 g-0" id="forecastContaciner"></div>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="container overflow-hidden">
+            <div class="row g-5 py-5">
+               <div class="col-md-8">
+                  <div class="forecast-search position-relative">
+                        <input autocomplete="off"class="w-100" type="email"placeholder="Email to subscribe..." name="mail" />
+                        <button class="text-white btn__primary position-absolute" type="submit"> subscribe
+                        </button>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-md-3 offset-1">
+                  <div class="social">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                     <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+               </div>
+               <p class="mt-4 text-white">
+                  Copyright 2014 Company name. Designed by Themezy. All rights
+                  reserved
+               </p>
+            </div>
+         </div>
+      </footer>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/matin.js"></script>
+   </body>
+</html>

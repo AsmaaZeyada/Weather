@@ -1,0 +1,107 @@
+body {
+   font-family: "Roboto", sans-serif;
+}
+:root {
+   --color-primary: #1e202b;
+   --color-secodary: #009ad8;
+   --color-section: #323544;
+   --color-section2: #262936;
+}
+.btn__primary {
+   color: white;
+   background-color: var(--color-secodary);
+   outline: unset;
+   border: unset;
+   padding: 0.65rem 2.1rem;
+   border-radius: 10rem;
+   font-size: 0.8rem;
+   font-weight: 500;
+}
+.color__secondary {
+   color: var(--color-secodary);
+}
+/* ============================ Header ============================ */
+.navbar {
+   background-color: var(--color-primary, black);
+   min-height: 8rem;
+   font-size: 0.7rem;
+   --bs-navbar-color: var(--bs-white);
+   --bs-navbar-hover-color: var(--color-secodary);
+   --bs-navbar-active-color: var(--color-secodary);
+   --bs-navbar-nav-link-padding-x: 1.5rem;
+   --bs-navbar-brand-color: var(--bs-white);
+   --bs-navbar-brand-hover-color: var(--bs-white);
+}
+.navbar .navbar-brand h1 {
+   font-weight: 900;
+}
+.navbar .navbar-brand span {
+   font-size: 0.6rem;
+   color: var(--bs-gray-500);
+   font-weight: 400;
+}
+.navbar .nav-link {
+   border: 2px solid transparent;
+   margin-left: 0.7rem;
+   border-radius: 5rem;
+   padding: 0.3rem;
+}
+.navbar .nav-link:is(:hover, .active) {
+   border-color: var(--color-secodary);
+}
+/* ============================ FORECAST ============================ */
+.forecast {
+   background-color: var(--color-primary);
+   background-image: url(../images/banner.png);
+   background-repeat: no-repeat;
+   min-height: 90vh;
+}
+.forecast-search input {
+   background-color: var(--color-primary);
+   color: var(--bs-white);
+   padding: 1rem 2rem;
+   border-radius: 10rem;
+   outline: unset;
+   border: unset;
+   font-size: 0.8rem;
+}
+.forecast-search button {
+   right: 0.5rem;
+   top: 25px;
+   transform: translateY(-50%);
+}
+.forecast .card {
+   border: unset;
+   border-radius: unset;
+   background-color: var(--color-section) ;
+}
+.forecast .card .deg {
+   font-size: 5rem;
+   font-weight: 700;
+}
+.forecast .col:nth-child(2) .card {
+   background-color: var(--color-section2) ;
+
+}
+/* ============================ FOOTER ============================ */
+footer {
+   background-color: var(--color-section2);
+}
+footer .social a {
+   color: var(--color-secodary);
+   background-color: var(--color-primary);
+  
+   border-radius: 50%;
+   display: inline-block;
+   text-decoration: none;
+}
+footer .social a:hover {
+   background-color: var(--color-secodary);
+   color: var(--bs-white);
+}
+footer .social i {
+   display: grid;
+   place-content: center;
+   width: 3rem;
+   height: 3rem;
+}
